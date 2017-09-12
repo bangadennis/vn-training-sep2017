@@ -1,5 +1,5 @@
 {
-  "id": "http://schemas.web/manifest#",
+  "id": "http://schemas.web/example#",
   "title": "Example Schema",
   "description": "Example Schema",
   "type": "object",
@@ -12,6 +12,6 @@
       "default": "0.0.1"
     }
   },
-  "required": [ "name", "version" ],
+  "required": [ "name" ],
   "additionalProperties": false
 }

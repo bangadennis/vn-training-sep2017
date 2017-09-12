@@ -35,12 +35,10 @@ app.post( '/', (req, res) => {
 
   if ( !valid ) {
     res.statusCode = 400;
-    res.json( {
+    return res.json( {
       status: 'ERROR',
       data: validate.errors
     } );
-
-    return;
   }
 
   let id = uuid();

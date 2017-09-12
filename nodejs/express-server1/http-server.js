@@ -23,7 +23,7 @@ app.get( '/', (req, res) => {
 app.get( '/:id', (req, res) => {
   if ( !database[req.params.id] ) {
     res.statusCode = 404;
-    res.end();
+    return res.end();
   }
 
   res.json( database[req.params.id] );

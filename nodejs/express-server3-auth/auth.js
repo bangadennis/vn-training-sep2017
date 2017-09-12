@@ -1,5 +1,5 @@
 const passport = require( 'passport' );
-const BasicStrategy = require( 'passport-http' ).BasicStrategy;
+const {BasicStrategy} = require( 'passport-http' );
 
 passport.use( new BasicStrategy( (username, password, done) => {
   if ( username !== password ) {
