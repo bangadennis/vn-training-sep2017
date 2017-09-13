@@ -1,5 +1,5 @@
 {
-  "name": "postgres1-simple",
+  "name": "postgres1-event",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
