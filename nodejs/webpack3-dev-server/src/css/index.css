@@ -1,0 +1,11 @@
+
+body {
+  margin  : 0;
+  padding : 0;
+}
+
+.red {
+  background-color : red;
+  color            : white;
+  font-size        : 3em;
+}
