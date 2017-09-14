@@ -30,3 +30,17 @@ INSERT INTO event (collected_at, concept, data) VALUES ('2010-05-01', 1, '{ "a":
 
 INSERT INTO event (collected_at, data) VALUES ('2010-06-01', jsonb_object('{a,b,c,d}', '{1,2,3,4}'));
 INSERT INTO event (collected_at, data) VALUES ('2010-07-01', jsonb_build_object('a', 3, 'b', 2, 'c', 1));
+
+INSERT INTO event (collected_at, data) VALUES ('2010-07-01',
+ '
+ {
+   "a": 1,
+   "b": 2,
+   "array": [
+     { "a": 100, "b": 200 },
+     { "a": 100, "b": 200 },
+     { "a": 100, "b": 200 }
+   ]
+ }
+ '
+);
