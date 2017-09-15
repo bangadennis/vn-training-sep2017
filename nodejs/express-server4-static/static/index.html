@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Some title</title>
+</head>
+<body>
+
+<div>Status: <span id="status"></span></div>
+
+<script>
+  const statusEl = document.querySelector( '#status' );
+  statusEl.innerHTML = "OK";
+
+  fetch( '/api/status' ).then( v => v.json() ).then( v => {
+    statusEl.innerHTML = v.status;
+  } )
+</script>
+</body>
+</html>
