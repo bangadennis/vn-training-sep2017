@@ -1,0 +1,9 @@
+
+.Box {
+  margin           : 5px;
+  padding          : 50px;
+  color            : white;
+  font-size        : 2em;
+  text-align       : center;
+  display          : inline-block;
+}
